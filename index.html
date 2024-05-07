@@ -29,6 +29,7 @@
 
         body {
             background-color: #130E0B;
+            overflow-x: hidden;
         }
 
         nav {
@@ -38,7 +39,7 @@
         }
 
         nav ul {
-            margin: 2rem;
+            margin: 2rem 3.7rem;
             display: flex;
             gap: 70px;
         }
@@ -59,7 +60,6 @@
             height: 100dvh;
             display: grid;
             grid-template-rows: auto 1fr;
-            position: relative;
         }
 
         header section {
@@ -96,17 +96,39 @@
             margin: 1rem 0px;
         }
 
+        header .header .display div:first-child {
+            background: linear-gradient(307deg, rgba(173, 196, 196, 0.3) 0%, rgba(240, 236, 228, 1) 37%, rgba(255, 255, 255, 1) 64%, rgba(196, 188, 173, 0.32) 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        header .header .display div:last-child {
+            background: linear-gradient(307deg, rgba(173, 196, 196, 0.3) 0%, rgba(240, 236, 228, 1) 37%, rgba(255, 255, 255, 1) 64%, rgba(196, 188, 173, 0.32) 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
         header .header .lead {
             font-family: 'Poppins', sans-serif;
             font-size: 2.278rem;
-            font-weight: 500;
+            font-weight: 600;
             text-align: center;
+            background: linear-gradient(90deg, rgba(241, 237, 229, 1) 0%, rgba(166, 163, 157, 0.75) 200%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
 
         header .header .paragraph {
             font-weight: 500;
             text-align: center;
             max-width: 21rem;
+            background: linear-gradient(90deg, rgba(229, 226, 218, 0.3) -20%, rgba(229, 226, 218, 1) 50%, rgba(229, 226, 218, 0.3) 120%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
             margin: 4rem auto;
         }
 
@@ -128,6 +150,87 @@
             font-size: 2.556rem;
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
+            line-height: 1;
+        }
+
+        .about article div:first-child {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .about article .tags li {
+            padding: 5px 10px;
+            display: inline-block !important;
+            border-radius: 20px;
+            background-color: #fff;
+            font-family: 'Space Grotesk', sans-serif;
+            color: #A7A39D;
+            text-transform: uppercase;
+            font-size: 12px;
+            background: linear-gradient(90deg, rgba(52, 51, 49, 1) 0%, rgba(31, 23, 18, 1) 100%);
+        }
+
+        .about article .tags {
+            flex-wrap: wrap;
+            flex-direction: row;
+            display: flex;
+            gap: .5rem;
+            max-width: 20rem;
+        }
+
+        .about article {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            max-width: 1280px;
+            margin: auto;
+            gap: 7rem;
+        }
+
+        .about .profile {
+            display: flex;
+            position: relative;
+            height: 35rem;
+        }
+
+        /* .about .profile img:last-child {
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            z-index: -30;
+        } */
+
+        .about .profile img:first-child {
+            width: auto;
+            height: auto;
+        }
+
+        .about .profile img {
+            margin-inline: auto;
+        }
+
+        .about {
+            height: 100dvh;
+            display: flex;
+        }
+
+        .centauri {
+            position: absolute;
+            top: -30rem;
+            left: -45rem;
+            z-index: -50;
+        }
+
+        .sirio {
+            position: absolute;
+            top: -50rem;
+            left: 20rem;
+            z-index: -50;
+        }
+
+        main {
+            position: relative;
         }
     </style>
 </head>
@@ -144,7 +247,7 @@
         </nav>
         <section>
             <article class="header">
-                <div class="lead">hello, im</div>
+                <div class="lead">hello, i'm</div>
                 <div class="display">
                     <div>Karol John</div>
                     <div>Dela Cruz</div>
@@ -155,16 +258,17 @@
         <div class="imgGrid">
             <img src="assets/images/grid.png" alt="">
         </div>
+        <img class="centauri" src="assets/svg/Centauri.svg" alt="">
     </header>
     <main>
         <section class="about">
             <article>
                 <div>
-                    <div class="header">About.</div>
-                    <div class="paragraph">Lorem ipsum dolor sit amet consectetur. Gravida commodo dui nec massa mattis
+                    <h1 class="header">About.</h1>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur. Gravida commodo dui nec massa mattis
                         phasellus nisl. Risus et bibendum arcu lobortis. Sapien elit in amet egestas in dictum nisl
                         consectetur. Molestie urna quis pellentesque vitae sit dictumst non ultrices ac. Libero vitae
-                        molestie vitae nisl non bibendum at. Porttitor nisl proin donec.</div>
+                        molestie vitae nisl non bibendum at. Porttitor nisl proin donec.</p>
                     <ul class="tags">
                         <li>Meticulous</li>
                         <li>Fervid</li>
@@ -175,10 +279,12 @@
                     </ul>
                 </div>
                 <div class="profile">
-                    <img src="" alt="">
+                    <img src="assets/images/karol.png" alt="A picture of Karol John.">
+                    <!-- <img src="assets/svg/blackBlob.svg" alt=""> -->
                 </div>
             </article>
         </section>
+        <img class="sirio" src="assets/svg/Sirio.svg" alt="">
     </main>
     <footer></footer>
 </body>
