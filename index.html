@@ -13,12 +13,17 @@
             src: url(assets/fonts/Recoleta-Black.ttf);
         }
 
+        :root {
+            --gradient: linear-gradient(302deg, rgba(173, 196, 196, 0.35) 0%, rgba(240, 236, 228, 1) 26%, rgba(255, 255, 255, 1) 65%, rgba(196, 188, 173, 0.35) 100%);
+        }
+
         html {
             font-family: 'Work Sans', sans-serif;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
             color: #F1EDE5;
+            scroll-behavior: smooth;
         }
 
         * {
@@ -30,6 +35,7 @@
         body {
             background-color: #130E0B;
             overflow-x: hidden;
+            
         }
 
         nav {
@@ -97,14 +103,14 @@
         }
 
         header .header .display div:first-child {
-            background: linear-gradient(307deg, rgba(173, 196, 196, 0.3) 0%, rgba(240, 236, 228, 1) 37%, rgba(255, 255, 255, 1) 64%, rgba(196, 188, 173, 0.32) 90%);
+            background: var(--gradient);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
 
         header .header .display div:last-child {
-            background: linear-gradient(307deg, rgba(173, 196, 196, 0.3) 0%, rgba(240, 236, 228, 1) 37%, rgba(255, 255, 255, 1) 64%, rgba(196, 188, 173, 0.32) 90%);
+            background: var(--gradient);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -139,6 +145,8 @@
             right: 0;
             width: 100%;
             height: 100%;
+            -webkit-user-select: none;
+            user-select: none;
             z-index: -100;
         }
 
@@ -193,6 +201,12 @@
             position: relative;
             height: 35rem;
         }
+        .about .paragraph {
+            background: linear-gradient(117deg, rgba(217,213,206,1) 0%, rgba(204,194,185,1) 37%, rgba(181,160,148,1) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
 
         /* .about .profile img:last-child {
             position: absolute;
@@ -217,20 +231,35 @@
 
         .centauri {
             position: absolute;
-            top: -30rem;
-            left: -45rem;
+            top: -37rem;
+            left: -57rem;
             z-index: -50;
+            opacity: 0.8;
+            -webkit-user-select: none;
+            user-select: none;
         }
 
         .sirio {
             position: absolute;
-            top: -50rem;
+            top: -60rem;
             left: 20rem;
             z-index: -50;
+            opacity: 0.8;
+            -webkit-user-select: none;
+            user-select: none;
         }
 
         main {
             position: relative;
+        }
+        .msg::after {
+            content: "Best viewed in desktop, by karol.";
+            position: fixed;
+            bottom: 0; right: 0;
+            font-size: 12px;
+            font-family: 'Space Grotesk', 'Consolas', monospace;
+            padding: .5rem;
+            opacity: .3;
         }
     </style>
 </head>
@@ -239,7 +268,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">about</a></li>
+                <li><a href="#about">about</a></li>
                 <li><a href="#">background</a></li>
                 <li><a href="#">skills</a></li>
                 <li><a href="#">contact</a></li>
@@ -258,10 +287,10 @@
         <div class="imgGrid">
             <img src="assets/images/grid.png" alt="">
         </div>
-        <img class="centauri" src="assets/svg/Centauri.svg" alt="">
+        <img class="centauri" src="assets/svg/Centauri-min.webp" alt="">
     </header>
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <article>
                 <div>
                     <h1 class="header">About.</h1>
@@ -283,9 +312,10 @@
                 </div>
             </article>
         </section>
-        <img class="sirio" src="assets/svg/Sirio.svg" alt="">
+        <img class="sirio" src="assets/svg/Sirio-min.webp" alt="">
     </main>
     <footer></footer>
+    <div class="msg"></div>
 </body>
 
 </html>
