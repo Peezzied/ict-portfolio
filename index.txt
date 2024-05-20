@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Karol John is a pilipino grade 11 student with passion in computer and technology.">
+    <meta name="description" content="Karol John is a pilipino grade 11 student with passion in computer and technology.">
     <meta name="author" content="Karol John Dela Cruz.">
 
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
     <title>Karol John's</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
@@ -41,14 +39,12 @@
         body {
             background-color: #130E0B;
             overflow-x: hidden;
-
+            
         }
-
         .container {
             max-width: 1280px;
             margin: auto;
         }
-
         nav {
             display: flex;
             justify-content: flex-end;
@@ -216,9 +212,8 @@
             position: relative;
             height: 35rem;
         }
-
         .about .paragraph {
-            background: linear-gradient(117deg, rgba(217, 213, 206, 1) 0%, rgba(204, 194, 185, 1) 37%, rgba(181, 160, 148, 1) 100%);
+            background: linear-gradient(117deg, rgba(217,213,206,1) 0%, rgba(204,194,185,1) 37%, rgba(181,160,148,1) 100%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -279,31 +274,24 @@
         main {
             position: relative;
         }
-
         .msg::after {
             content: "Best viewed in desktop, by karol.";
             position: fixed;
-            bottom: 0;
-            right: 0;
+            bottom: 0; right: 0;
             font-size: 12px;
             font-family: 'Space Grotesk', 'Consolas', monospace;
             padding: .5rem;
             opacity: .3;
-        }
-        .background article .card div:nth-child(1) {
-            opacity: .8;
         }
         .background article .card div:nth-child(2) {
             font-size: 1.611rem;
             font-weight: 500;
             color: #E7E2DB;
         }
-
         .background article .card div:nth-child(3) {
             color: #A7A39D;
             font-weight: 500;
         }
-
         .background article .card {
             background: linear-gradient(90deg, rgba(52, 51, 49, 1) 0%, rgba(31, 23, 18, 1) 100%);
             padding: 3rem 1.5rem;
@@ -314,114 +302,27 @@
             gap: .6rem;
             border-radius: 12px;
         }
-
         .background article .cards {
             display: flex;
             gap: 2rem;
-            margin-top: 3rem;
-            margin-inline: auto;
+            margin-top: 1rem;
         }
-
         .background .header {
             font-size: 2.556rem;
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
             line-height: 1;
         }
-        .background article > div:nth-child(2) {
-            color: transparent;
-            background: linear-gradient(117deg, rgba(217, 213, 206, 1) 0%, rgba(204, 194, 185, 1) 100%);
-            --webkit-background-clip: text;
-            background-clip: text;
-        }
         .background article {
             display: flex;
             flex-direction: column;
             gap: 2rem;
         }
-
         .background {
             display: flex;
         }
-
-        article {
+        article{
             width: 100%;
-        }
-
-        .contact .header {
-            font-size: 2.556rem;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-            line-height: 1;
-        }
-
-        .contact article {
-            display: grid;
-            grid-template-columns: auto auto;
-            ;
-        }
-
-        .contact .channels .channel .text {
-            display: flex;
-            flex-direction: column;
-            gap: .3em;
-        }
-
-        .contact .channels .channel {
-            display: grid;
-            grid-template-columns: 40px 1fr;
-            gap: 2em;
-        }
-
-        .contact .channels .channel .text div {
-            font-family: 'Space Grotesk', monospace !important;
-            color: #d9d5ce;
-        }
-
-        .contact .channels .channel .text a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .contact .channels {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            max-width: max-content;
-            margin-inline: auto
-        }
-
-        .contact .channels .channel>*:first-child img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transform: translateY(5px);
-        }
-
-        .contact .channels .channel>*:first-child {
-            width: auto;
-            height: 37px;
-            margin-top: auto;
-
-        }
-
-        .contact .heading {
-            display: flex;
-            gap: 2rem;
-            flex-direction: column;
-            max-width: 23rem;
-            justify-content: center;
-            margin-inline: auto
-        }
-        .contact .heading >*:last-child {
-            color: transparent;
-            background: linear-gradient(117deg, rgba(217, 213, 206, 1) 0%, rgba(204, 194, 185, 1) 100%);
-            --webkit-background-clip: text;
-            background-clip: text;
-        }
-        .contact {
-            height: 100dvh;
-            display: flex ;
         }
     </style>
 </head>
@@ -431,9 +332,9 @@
         <nav>
             <ul>
                 <li><a href="#about">about</a></li>
-                <li><a href="#background">background</a></li>
-                <li><a href="#background">skills</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#">background</a></li>
+                <li><a href="#">skills</a></li>
+                <li><a href="#">contact</a></li>
             </ul>
         </nav>
         <section>
@@ -474,10 +375,10 @@
                 </div>
             </article>
         </section>
+        <!-- <img class="sirio" src="assets/svg/Sirio-min.webp" alt=""> -->
         <section class="background" id="background">
             <article class="container">
                 <h1 class="header">Background</h1>
-                <div>Throughout my academic career, I've manage to maintain academic achievement in highschool and finishing with Best In Computer award and with High Honor award. And that period of my academic life is my all-time high success gaining successive recognitions. Furthermore, here's my other characteristics that you might learn more about me.</div>
                 <div class="cards">
                     <div class="card">
                         <div><img src="assets/images/calendar.png" alt=""></div>
@@ -492,46 +393,7 @@
                     <div class="card">
                         <div><img src="assets/images/map.png" alt=""></div>
                         <div>Hobby</div>
-                        <div>Passionate problem solver, discovery enthusiast, productivity afionado, loves to play
-                            strategic games.</div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="contact" id="contact">
-            <article class="container">
-                <div class="heading">
-                    <h1 class="header">Contact Me</h1>
-                    <div>Would you like to work with me? Reach me out for inquiries through these active contact channels.</div>
-                </div>
-                <div class="channels">
-                    <div class="channel">
-                        <div><img src="assets/images/email.png" alt=""></div>
-                        <div class="text">
-                            <div>Email</div>
-                            <a href="mailto:delacruzkarojohn012@gmail.com">delacruzkarojohn012@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="channel">
-                        <div><img src="assets/images/messenger.png" alt=""></div>
-                        <div class="text">
-                            <div>Messenger</div>
-                            <a href="https://www.facebook.com/karoljohn.delacruz.12">Karol John Dela Cruz</a>
-                        </div>
-                    </div>
-                    <div class="channel">
-                        <div><img src="assets/images/discord.png" alt=""></div>
-                        <div class="text">
-                            <div>Discord</div>
-                            <a href="https://discordapp.com/users/485730855726088193">Peezzied</a>
-                        </div>
-                    </div>
-                    <div class="channel">
-                        <div><img src="assets/images/phone.png" alt=""></div>
-                        <div class="text">
-                            <div>Phone</div>
-                            <a href="tel:+63947-981-1614">+63947-981-1614</a>
-                        </div>
+                        <div>Passionate problem solver, discovery enthusiast, productivity afionado, loves to play strategic games.</div>
                     </div>
                 </div>
             </article>
